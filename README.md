@@ -2,6 +2,27 @@
 
 A modern, interactive XPath builder with a beautiful sidebar UI that allows users to create, test, and validate XPath selectors step by step.
 
+## 🎯 Two Versions Available
+
+### 1. Browser Extension (Recommended)
+**Ready to use! Load the extension in Chrome/Edge and use on any website.**
+
+- 📁 Located in: `/extension` folder
+- 📖 Quick Start: See [INSTALLATION.md](INSTALLATION.md)
+- 📚 Full Docs: See [extension/README.md](extension/README.md)
+- ✅ Works on any website immediately
+- 🚀 No build process required
+
+### 2. Web Application (React Demo)
+**Demo application with sample content for development.**
+
+- 📁 Located in: `/src` folder
+- 🛠️ Requires: `npm install` and `npm run dev`
+- 💻 Built with React + TypeScript + Vite
+- 🎨 Full source code for customization
+
+---
+
 ## Features
 
 ### Core Functionality

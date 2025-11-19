@@ -1,0 +1,423 @@
+/* XPath Workflow Extension - Content Styles */
+
+.xpath-sidebar {
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  width: 400px !important;
+  height: 100vh !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15) !important;
+  color: white !important;
+  overflow-y: auto !important;
+  z-index: 2147483647 !important;
+  animation: xpath-slideIn 0.3s ease-out !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+@keyframes xpath-slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.xpath-sidebar * {
+  box-sizing: border-box !important;
+}
+
+.sidebar-header {
+  padding: 24px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar-header h2 {
+  margin: 0 0 8px 0 !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: white !important;
+}
+
+.sidebar-subtitle {
+  margin: 0 !important;
+  font-size: 14px !important;
+  opacity: 0.9 !important;
+  color: white !important;
+}
+
+.sidebar-content {
+  padding: 20px !important;
+}
+
+.xpath-display {
+  background: rgba(255, 255, 255, 0.1) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+  margin-bottom: 20px !important;
+}
+
+.xpath-display label {
+  display: block !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 8px !important;
+  opacity: 0.8 !important;
+  color: white !important;
+}
+
+.xpath-output {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  padding: 12px !important;
+  border-radius: 6px !important;
+  margin-bottom: 8px !important;
+}
+
+.xpath-output code {
+  flex: 1 !important;
+  font-family: 'Courier New', monospace !important;
+  font-size: 13px !important;
+  word-break: break-all !important;
+  color: #ffeb3b !important;
+}
+
+.btn-icon {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  padding: 6px 10px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+  font-size: 16px !important;
+  color: white !important;
+}
+
+.btn-icon:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  transform: scale(1.1) !important;
+}
+
+.xpath-info {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.match-count {
+  font-size: 13px !important;
+  padding: 4px 12px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px !important;
+  color: white !important;
+}
+
+.match-count.has-matches {
+  background: #4caf50 !important;
+  font-weight: 600 !important;
+}
+
+.selection-mode {
+  margin-bottom: 20px !important;
+}
+
+.btn-primary {
+  width: 100% !important;
+  padding: 14px !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.3s !important;
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn-primary.active {
+  background: #ff9800 !important;
+  border-color: #ff9800 !important;
+  animation: xpath-pulse 1.5s infinite !important;
+}
+
+@keyframes xpath-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.step-builder {
+  margin-bottom: 24px !important;
+}
+
+.step-builder h3 {
+  font-size: 16px !important;
+  margin: 0 0 12px 0 !important;
+  opacity: 0.9 !important;
+  color: white !important;
+}
+
+.step-options {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px !important;
+}
+
+.btn-step {
+  padding: 10px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+
+.btn-step:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  transform: translateY(-1px) !important;
+}
+
+.steps-list {
+  margin-bottom: 20px !important;
+}
+
+.steps-list h3 {
+  font-size: 16px !important;
+  margin: 0 0 12px 0 !important;
+  opacity: 0.9 !important;
+  color: white !important;
+}
+
+.steps-list ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.step-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 12px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 6px !important;
+  margin-bottom: 8px !important;
+  transition: all 0.2s !important;
+}
+
+.step-item:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.step-number {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 50% !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  color: white !important;
+}
+
+.step-info {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+}
+
+.step-type {
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  opacity: 0.7 !important;
+  color: white !important;
+}
+
+.step-description {
+  font-size: 14px !important;
+  color: white !important;
+}
+
+.btn-remove {
+  background: rgba(244, 67, 54, 0.3) !important;
+  border: none !important;
+  color: white !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+  font-size: 14px !important;
+}
+
+.btn-remove:hover {
+  background: rgba(244, 67, 54, 0.6) !important;
+  transform: scale(1.1) !important;
+}
+
+.sidebar-actions {
+  display: flex !important;
+  gap: 8px !important;
+  margin-bottom: 20px !important;
+}
+
+.btn-secondary {
+  flex: 1 !important;
+  padding: 10px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.quick-templates {
+  margin-bottom: 20px !important;
+}
+
+.quick-templates h3 {
+  font-size: 16px !important;
+  margin: 0 0 12px 0 !important;
+  opacity: 0.9 !important;
+  color: white !important;
+}
+
+.template-buttons {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px !important;
+}
+
+.btn-template {
+  padding: 10px !important;
+  background: rgba(76, 175, 80, 0.3) !important;
+  border: 1px solid rgba(76, 175, 80, 0.5) !important;
+  color: white !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+
+.btn-template:hover {
+  background: rgba(76, 175, 80, 0.5) !important;
+  transform: translateY(-1px) !important;
+}
+
+.selected-info {
+  background: rgba(255, 255, 255, 0.1) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+
+.selected-info h3 {
+  font-size: 16px !important;
+  margin: 0 0 12px 0 !important;
+  color: white !important;
+}
+
+.element-details p {
+  margin: 6px 0 !important;
+  font-size: 13px !important;
+  color: white !important;
+}
+
+.element-details strong {
+  opacity: 0.8 !important;
+}
+
+/* Highlight styles */
+.xpath-highlight {
+  outline: 3px solid #ff9800 !important;
+  outline-offset: 2px !important;
+  background-color: rgba(255, 152, 0, 0.1) !important;
+  transition: all 0.2s !important;
+}
+
+.xpath-hover {
+  outline: 2px dashed #2196f3 !important;
+  outline-offset: 2px !important;
+  cursor: crosshair !important;
+  background-color: rgba(33, 150, 243, 0.05) !important;
+}
+
+/* Notification */
+.xpath-notification {
+  position: fixed !important;
+  top: 20px !important;
+  right: 420px !important;
+  background: #4caf50 !important;
+  color: white !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  z-index: 2147483646 !important;
+  opacity: 0 !important;
+  transform: translateY(-10px) !important;
+  transition: all 0.3s !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.xpath-notification.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Scrollbar */
+.xpath-sidebar::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.xpath-sidebar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.xpath-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-radius: 4px !important;
+}
+
+.xpath-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .xpath-sidebar {
+    width: 100% !important;
+  }
+
+  .xpath-notification {
+    right: 20px !important;
+  }
+}
