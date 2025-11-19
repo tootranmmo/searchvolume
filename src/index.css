@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global styles for XPath highlighting */
+.xpath-highlight {
+  outline: 3px solid #ff9800 !important;
+  outline-offset: 2px;
+  background-color: rgba(255, 152, 0, 0.1) !important;
+  transition: all 0.2s;
+}
+
+.xpath-hover {
+  outline: 2px dashed #2196f3 !important;
+  outline-offset: 2px;
+  cursor: crosshair !important;
+  background-color: rgba(33, 150, 243, 0.05) !important;
+}
